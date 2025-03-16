@@ -424,7 +424,7 @@ class VLLMModel(LLM):
         sanitized.setdefault("temperature", generate_config.get("temperature", 1.0))
         sanitized.setdefault("top_p", generate_config.get("top_p", 1.0))
         sanitized.setdefault("top_k", generate_config.get("top_k", -1))
-        sanitized.setdefault("max_tokens", generate_config.get("max_tokens", 1024))
+        sanitized.setdefault("max_tokens", generate_config.get("max_tokens", 4096))
         sanitized.setdefault("stop", generate_config.get("stop", None))
         sanitized.setdefault(
             "stop_token_ids", generate_config.get("stop_token_ids", None)
