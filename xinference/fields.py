@@ -30,7 +30,7 @@ logprobs_field = Field(
 )
 
 max_tokens_field = Field(
-    default=1024,
+    default=4096,
     ge=1,
     description="The maximum number of tokens to generate.",
 )
